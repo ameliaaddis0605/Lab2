@@ -30,10 +30,20 @@ def main():
             player1.win_coin()
             player2.lose_coin()
             print("...It's a Match! Player 1 wins a coin")
-        else:
+        elif:
             player2.win_coin()
             player1.lose_coin()
             print("...No Match! Player 2 wins a coin")
+            
+            print("Player 1 has",player1.get_wallet())
+            print("Player 2 had",player2.get_wallet())
+    
+        else:
+            print("--- Final Score ---")
+            print("Player 1:",player1.get_wallet())
+            print("Player 2:",player2.get_wallet())
+        
+                  
 
 
 
