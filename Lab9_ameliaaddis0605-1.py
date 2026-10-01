@@ -11,8 +11,8 @@ def main():
     player2 = Player("Player 2")
     choice = ""
     print("--- Coin Match Game ---")
-    print("Player 1 has",player1.get_wallet)
-    print("Player 2 has",player2.get_wallet)
+    print("Player 1 has",player1.get_wallet())
+    print("Player 2 has",player2.get_wallet())
     choice = input("Do you want to toss the coins? (y/n): ")
     
 
@@ -22,15 +22,15 @@ def main():
         side1 = player1.get_coin_side()
         side2 = player2.get_coin_side()
         print("Tossing...")
-        print("Player 1 has",player1.side1)
-        print("Player 2 has", player2.side2)
+        print("Player 1 has",side1)
+        print("Player 2 has", side2)
 
 
         if side1 == side2:
             player1.win_coin()
             player2.lose_coin()
             print("...It's a Match! Player 1 wins a coin")
-        elif:
+        else:
             player2.win_coin()
             player1.lose_coin()
             print("...No Match! Player 2 wins a coin")
@@ -38,21 +38,18 @@ def main():
             print("Player 1 has",player1.get_wallet())
             print("Player 2 had",player2.get_wallet())
             choice = input("Do you want to toss the coins? (y/n: ")
-            
-        if player1.get_wallet() > player2.get_wallet():
+        
+
+ print("--- Final Score ---")
+ print("Player 1:",player1.get_wallet())
+ print("Player 2:",player2.get_wallet())
+
+ if player1.get_wallet() > player2.get_wallet():
             print("Player 1 has more coins!")
         elif player1.get_wallet() < player2.get_wallet():
             print("Player 2 has more coins!")
-        elif player1.get_wallet() == player2.get_wallet():
+        else player1.get_wallet() == player2.get_wallet():
             print("It's a draw!")
-
-    
-            
-    
-    else:
-        print("--- Final Score ---")
-        print("Player 1:",player1.get_wallet())
-        print("Player 2:",player2.get_wallet())
         
                   
 
