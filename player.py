@@ -22,7 +22,7 @@ class Player:
         self.__wallet = self.__wallet + 1
 
     def lose_coin(self):
-        self.__wallet = self._wallet - 1
+        self.__wallet = self.__wallet - 1
 
     def get_wallet(self):
         return self.__wallet 
