@@ -39,6 +39,15 @@ def main():
             print("Player 2 had",player2.get_wallet())
             choice = input("Do you want to toss the coins? (y/n: ")
             
+        if player1.get_wallet() > player2.get_wallet():
+            print("Player 1 has more coins!")
+        elif player1.get_wallet() < player2.get_wallet():
+            print("Player 2 has more coins!")
+        elif player1.get_wallet() == player2.get_wallet():
+            print("It's a draw!")
+
+    
+            
     
     else:
         print("--- Final Score ---")
